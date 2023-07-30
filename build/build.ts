@@ -61,6 +61,10 @@ const builtins = [
   "url",
   "readline",
   "stream",
+  //XMPP START
+  "net",
+  "events",
+  //XMPP END
 ];
 
 function rmDirSync(dirPath): void {

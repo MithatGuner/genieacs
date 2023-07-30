@@ -101,6 +101,12 @@ const options = {
 
   // Should probably never be changed
   DEVICE_ONLINE_THRESHOLD: { type: "int", default: 4000 },
+
+  //XMPP START
+  XMPP_JID: { type: "string", default: "" },
+  XMPP_PASSWORD: { type: "string", default: "" },
+  //XMPP END
+
 };
 
 const allConfig: { [name: string]: string | number } = {};
