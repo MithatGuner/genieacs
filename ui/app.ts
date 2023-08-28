@@ -133,8 +133,8 @@ m.route(document.body, "/overview", {
   "/overview": pagify("overview", overviewPage),
   "/devices": pagify("devices", devicesPage),
   "/devices/:id": pagify("devices", devicePage),
-  "/devices_custom": pagify("devices", devicesCustomPage),
-  "/devices_custom/:id": pagify("devices", devicesCustomPage),
+  "/devices_custom": pagify("devices_custom", devicesCustomPage),
+  "/devices_custom/:id": pagify("devices_custom", devicesCustomPage),
 
   "/faults": pagify("faults", faultsPage),
   "/admin": redirectAdminPage(),

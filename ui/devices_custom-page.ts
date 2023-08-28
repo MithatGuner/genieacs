@@ -314,7 +314,7 @@ export const component: ClosureComponent = (): Component => {
         return m(
           "a",
           {
-            href: `#!/devices/${encodeURIComponent(
+            href: `#!/devices_custom/${encodeURIComponent(
               device["DeviceID.ID"].value[0]
             )}`,
           },
