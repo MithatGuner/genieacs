@@ -49,8 +49,8 @@ const component: ClosureComponent = (): Component => {
         tabs.push(
           m(
             "li",
-            { class: active["devices_custom"] },
-            m("a", { href: "#!/devices_custom" }, "Devices Custom")
+            { class: active["devices"] },
+            m("a", { href: '#!/devices/?filter=Q("Tag"%2C "XenOS")' }, "Devices Custom")
           )
         );
       }
