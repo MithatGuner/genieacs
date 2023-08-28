@@ -45,6 +45,16 @@ const component: ClosureComponent = (): Component => {
         );
       }
 
+      if (window.authorizer.hasAccess("devices", 2)) {
+        tabs.push(
+          m(
+            "li",
+            { class: active["devices_custom"] },
+            m("a", { href: "#!/devices_custom" }, "Devices Custom")
+          )
+        );
+      }
+
       if (window.authorizer.hasAccess("faults", 2)) {
         tabs.push(
           m(
