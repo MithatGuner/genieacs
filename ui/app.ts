@@ -24,6 +24,8 @@ import * as wizardPage from "./wizard-page";
 import * as loginPage from "./login-page";
 import * as overviewPage from "./overview-page";
 import * as devicesPage from "./devices-page";
+import * as devicesCustomPage from "./devices_custom-page";
+
 import * as devicePage from "./device-page";
 import * as errorPage from "./error-page";
 import * as faultsPage from "./faults-page";
@@ -131,6 +133,9 @@ m.route(document.body, "/overview", {
   "/overview": pagify("overview", overviewPage),
   "/devices": pagify("devices", devicesPage),
   "/devices/:id": pagify("devices", devicePage),
+  "/devices_custom": pagify("devices", devicesCustomPage),
+  "/devices_custom/:id": pagify("devices", devicesCustomPage),
+
   "/faults": pagify("faults", faultsPage),
   "/admin": redirectAdminPage(),
   "/admin/presets": pagify("presets", presetsPage),
